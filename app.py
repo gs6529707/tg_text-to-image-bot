@@ -1,10 +1,11 @@
 import requests
 from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
+import os
 
 # API keys and endpoints
-TELEGRAM_BOT_TOKEN = "7460472435:AAGfQeRJ4BFpo7YB3UgPqa_gL3hEMVN7HIY"  # Replace with your Telegram bot token
-CLIPDROP_API_KEY = "d93b961f8b021af8bb4232c043c3820726b3f08b61abf8210eff5edb8eb164f43e6847452f0717dceb7a8d1cc2a81a94"  # Replace with your ClipDrop API key
+TELEGRAM_BOT_TOKEN = os.getenv("token")"  # Replace with your Telegram bot token
+CLIPDROP_API_KEY = os.getenv("api")  # Replace with your ClipDrop API key
 CLIPDROP_API_URL = "https://clipdrop-api.co/text-to-image/v1"  # ClipDrop API endpoint
 
 # Function to generate image using ClipDrop API
