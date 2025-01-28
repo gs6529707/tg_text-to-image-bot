@@ -37,7 +37,7 @@ async def generate_image(prompt: str) -> str:
 # Command handler to start the bot
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     await update.message.reply_text(
-        "Welcome to the ClipDrop Image Generator Bot! Send me a prompt, and I'll create an image for you."
+        "Welcome to the Gaurav's Image Generator Bot! Send me a prompt, and I'll create an image for you."
     )
 
 # Message handler to process user prompts and generate images
