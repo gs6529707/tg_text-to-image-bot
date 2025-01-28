@@ -4,7 +4,7 @@ from telegram.ext import Application, CommandHandler, MessageHandler, filters, C
 import os
 
 # API keys and endpoints
-TELEGRAM_BOT_TOKEN = os.getenv("token")"  # Replace with your Telegram bot token
+TELEGRAM_BOT_TOKEN = os.getenv("token") # Replace with your Telegram bot token
 CLIPDROP_API_KEY = os.getenv("api")  # Replace with your ClipDrop API key
 CLIPDROP_API_URL = "https://clipdrop-api.co/text-to-image/v1"  # ClipDrop API endpoint
 
